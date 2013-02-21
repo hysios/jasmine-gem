@@ -10,6 +10,8 @@
   <% js_files.each do |js_file| %>
   <script src="<%= js_file %>" type="text/javascript"></script>
   <% end %>
+  <script>var require = {"baseUrl":"/assets"};</script>
+  <script data-main="/assets/application" src="/assets/require.js"></script>
 
 </head>
 <body>
